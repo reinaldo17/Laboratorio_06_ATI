@@ -3,6 +3,11 @@ window.onload = function(){
 		loadDoc()
 	};
 }
+window.onload = function(){ 
+	document.getElementById("butt").onclick = function() {
+		loadDoc()
+	};
+}
 
 function loadDoc() {
 	var xhttp = new XMLHttpRequest();
