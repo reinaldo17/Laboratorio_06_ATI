@@ -1,6 +1,14 @@
 $(document).ready(function() {
 	$("#butt").click(loadDoc);
 });
+//cambio
+var doccambio = function() {
+	$.ajax({
+		type: "GET",
+		dataType: "xml",
+		url: "http://localhost/ATI/data.xml",
+	})
+
 
 $(document).ajaxError(function(e, jqXHR, settings, exception) {
 	switch (jqXHR.status) {
